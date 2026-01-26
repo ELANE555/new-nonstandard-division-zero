@@ -1,0 +1,263 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{float}
+
+\title{New nonstandard analysis and division by zero}
+\author{Emmett Lane}
+\date{February 2026}
+
+\begin{document}
+\setcounter{secnumdepth}{0}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+
+
+\section{Introduction}
+
+Division by zero is undefined. This is because zero in and of itself is a number \textit{designed} to not possess a multiplicative inverse due to its status as a multiplicative annihilator - zero has the property that everything multiplied by zero yields zero.
+
+\[
+0 \cdot x = 0
+\]
+
+When we have an expression such as $a/0 = b$, what we are arithmetically trying to find is some number \textit{b} such that $b \cdot 0 = a$. However, $b \cdot 0$ is \textit{always} equal to 0, and if \textit{a} is non-zero, then the equation is a contradiction. And yet, for many people - mathematicians and non-mathematicians alike, the fact that such a basic and elementary number, when manipulated by another basic, elementary operation, is undefined is a point of interest.
+
+Now, although division by zero is undefined, I would argue that one of ways in which  mathematics has grappled with the concept of defining division by zero (without taking into account Riemann spheres [2] and wheel theory [3], which explicitly define division by zero) is \textit{calculus}. Most notably, the concept of the \textit{limit} is somewhat akin to defining division by zero—\textit{somewhat}. For example, the basic definition of a derivative, known as a forward difference quotient, is the evaluation of two points on a function as the distance between the points \textit{approaches} zero:
+\[
+f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}
+\]With the key word being ``approach,'' but never reaching. A limit does not evaluate a function \textit{at} a point, but rather \textit{around} a point; in this particular case, the limit evaluates two points whose separation \textit{approaches}, but never reaches, zero [3]. But, very naively speaking, the limit does in a manner, give a glimpse into division by zero - because if we let h \textit{reach} zero - the expression simplifies to $\frac{0}{0}$ - which is an undefined division by zero expression. Naturally however, this never actually happens, because the limit doesn't describe a destination, but rather a tendency, which makes it so traditionally, mathematics, in its current state, leaves division by zero undefined, with limits in calculus being the "closest" we get to making sense of division by zero. This conclusion however, comes with a very naive proposition. What if, instead of making it so that limits merely describe tendencies, we let limits "reach" their points, by \textit{extending} the concept of the limit and of zero, all while redefining what it means to \textit{be zero}? Although this proposition is frankly absurd by conventional mathematical standards, it is one which I nonetheless chose to explore. From this exploration emerged ``new nonstandard analysis,'' along with a corresponding number system called the \textit{absolute} hyper-reals. This paper shall be devoted to motivating this new number system, and describing (although amateurishly) the philosophical and structural ideas which constructs it. 
+\newpage\section{Abstract}
+
+This ``fan theory'' explores and considers a \textbf{speculative} new number system, known as the \emph{absolute hyper-reals}, which are inspired by Abraham Robinson's hyper-reals as seen in his work in nonstandard analysis.\\ The entire system fundamentally reformulates the concept of continuity and zero on the philosophical level, where instead of interpreting a number system that is purely continuous (infinitely indivisible), this system has as its main premise the interpretation of magnitude as being discrete, in which a fundamental lower bound of non-zero magnitude exists. This absolute lower bound is known as the \emph{absolute infinitesimal}. Magnitudes lesser than that of the absolute infinitesimal are considered to be \textbf{zero-equivalent}, and magnitudes larger than the absolute hyperfinite (which is the reciprocal identity of the absolute infinitesimal) are considered to be \textbf{infinite-equivalent}. Because of this idea, the way in which the number line continuum functions is altered, introducing a concept known as "mathematical data" - which essentially replaces the standard notion of continuity, interpreting that where magnitude fails \textit{data} takes hold. Mathematical data also serves to extend the concept of zero as a number beyond it's ordinary definition as well - as zero becomes a number which can be reached through (hyperfinite) iterated subdivision of non-zero numbers.\\Because of all this, the way in which we understand and approach limits, and limit-derived concepts is significantly altered, and it is these alterations which also offers a new interpretation and redefinition to what curvature is and how a circle is defined. \\In this theory, a circle is described in two parts: an \emph{actual} or \emph{physical} definition - being a regular polygon whose side length always remains at the absolute infinitesimal - and a \emph{virtual} or \emph{data} definition, defined as a regular polygon with side length $0$ and side count $\frac{C}{0}$ (with $C$ denoting the circumference). This virtual structure is \emph{integrated} into the physical structure, ensuring that when the physical geometry is scaled upwards or downwards, it changes in such a way that the circle remains as physically ``smooth'' as possible, gaining or losing edges accordingly.\\This redefinition of a circle as both a physical and virtual entity is achieved through defining division by zero, in which $\frac{C}{0}$ is interpreted as being a specific infinite data that arranges and sums zeroes in a particular manner to form the virtual structure of a circle, and by extension, re-interprets \textbf{curvature} and the concept of smooth edges as a whole.\\After this, other fundamental concepts of calculus are discussed and reinterpreted within this number system, such as derivatives and integrals, marking the beginning of a ``new'' form of nonstandard analysis.
+
+\newpage \section{Chapter 1 - Metaphysics and mathematical data}
+
+In mathematics, nothingness is flattened into a single, uniform concept: zero. To say that we have zero of something, for example, zero meters, zero apples, or zero seconds, is, mathematically speaking, to say the same thing in every case because the particular kind of thing we have disappears. \\This is because zero has an annihilator property, in which everything multiplied by zero returns zero, which makes it so nothingness cannot be accumulated or differentiated in the way that “somethings” can. Two nothings are not more than one nothing; three nothings are not different from none at all. Once quantity collapses into absence, counting loses its meaning. It is why: $$0\cdot meters=0\cdot seconds = 0\cdot apples = 0 \cdot2=0\cdot3=0$$Because multiplication by zero erases all distinctions. Whatever was there, units, magnitude, or kind - is reduced to the same mathematical descriptor: zero. And in reality as well, we can ascertain this to be the case - zero apples is nothingness, zero meters is also nothingness, and because nothingness has no physical discernible features, it is all one thing - it is all zero, it is all \textbf{nothing}.\\\\ And yet, if we were to consider and approach this from a philosophical angle, particularly a metaphysical or ontological angle, the notion of nothingness becomes far less straightforward. We ask ourselves: what is nothing? What does it mean to be nothing? Is there such a thing as "different" nothings? Is there a point in which something ceases to be able to be considered something, and it becomes nothing? And if this point does exist, is this nothing which was attained from this previous something the same as a nothing that never was?\\Well, in reality, these questions resist definitive answers. These are, after all, metaphysical questions, and there is no clear-cut method for arriving at definitive answers; at most, one can only reflect upon them.\\ However, in mathematics, I would argue that such questions are not seriously entertained whatsoever, nor need they truly be. What purpose would it serve to treat zero meters as mathematically distinct from zero seconds? Once quantity vanishes, the particular nature of what is being measured becomes irrelevant. Moreover, there is traditionally no sharp boundary between a nonzero magnitude and zero itself. Asking where nothing “begins” is therefore largely meaningless in a mathematical context. Instead, mathematics describes a \textit{limit}, which describes a tendency toward a value without requiring that the value itself be reached or reified as a metaphysical boundary. \\ And yet, one might ask: what if it were not so simple? What if we attempted to integrate these philosophical notions of nothingness into the concept of zero itself, thereby reinventing the number entirely? What if different forms of nothingness were acknowledged, or if a hard boundary existed—one in which the point being evaluated is not merely approached, but actually crossed? \\ What would emerge would be a whole new way of imagining numbers and continuity: and this new concept in which we integrate these absurd philosophical queries into mathematics is what I call " \textbf{mathematical data}".\\ \subsection{Actuality and virtuality}To understand mathematical data as a whole, and its role in this theory, one must first accept that the concept of a number is philosophically reconceived here. Instead of numbers being abstract representations of quantity, they are revamped to be described in two parts: "actuality" (also called \textit{actual value}) and "virtuality" (also known as \textit{data}).
+Actuality is understood as the \textit{quantity} of a number as an abstraction—it is the "how much" of a number. This is not a foreign concept, because traditional notions of numbers consider only their actuality. When we describe the number one, we fundamentally understand it as being a \textit{quantity} of one—this is actuality. Essentially, what a number's value is \textbf{is} its actuality.
+What makes numbers in this number system different, however, is that they comprise another aspect, one which traditional mathematics doesn't consider. This other aspect, which \textit{mathematical data} describes, is called the \textit{virtuality} of a number (we also say \textit{data}, \textit{virtual value}, or \textit{virtual information} depending on context). Virtuality and mathematical data describe the same idea and concept—namely, \textit{information} about a number \textit{beyond} its actuality. Specifically, virtuality (and data as a whole) is defined as "metadata" or "information" about numbers. Data can be thought of as a \textit{qualitative} framework describing information about a number: its origins, what it is a result of, its context, and other trivial and non-trivial tidbits of information. To analogize, I would describe data as being somewhat akin to an identification card or "passport" for numbers.\\ Utilizing virtuality and actuality, if we consider  the number "4" in this number system, we would say it has an actuality (actual value) of 4 - (it is literally 4 units) but a virtuality (mathematical data) of being created by me, just now, for the purpose of demonstration. This virtuality aspect of a number is very much based upon metaphysics and ontology, because this trivial, and even sometimes "unknowable" information about a number being carried as some sort of "essence" is what virtuality describes.\\
+Now, the important thing to note, is that virtuality (or \textit{data}) does NOT describe the actual value of a number, and you cannot describe actuality with virtuality or virtuality with actuality, as the two are fundamentally distinct. What this means is that by default, we say that virtuality of a number has no actual value, which makes the value of virtual information about a number "0" by convention. If I were to return to our identification card analogy, we are \textit{not} our passports or identification cards, but our passports and identification cards do describe us to a certain extent. A simple way to see this is by the following:$$1=1+\text{data}$$ $$1=1+0$$ In which the right hand side has the number 1 as a whole, and the left hand side illustrates the number's actuality (quantity of 1) plus it's virtuality (information which does not contain value). To demonstrate actuality and virtuality, we shall consider a very simple following real-world example of comparing two distinct objects, applying certain metaphysical concepts, and then describing the numbers through their actuality and virtuality. \\ \subsection{Different Absences}For our example, we can consider having an apple and a banana. Now, in their presence, they are different, as we can touch, feel, and taste the difference between the two, because in our reality, the matter which composes one differs from the matter which composes the other. However, in their absence, they no longer possess the physical features to distinguish each other - zero apples is zero bananas.\\ But, when considering this on an \textit{ontological} level, the essence of their absence is not identical. Despite their physical indiscernibility, the absence of apples is not the same as the absence of bananas on a deeper, metaphysical level. This view holds that the concept of "absence" is not merely a void but is tied to the nature of the objects that are absent. The absence of apples might carry a different essence than the absence of bananas, even if, in practice, both are described as zero objects. In this context, the metaphysical interpretation would suggest that these two "nothings" are not equivalent because the objects they refer to, apples and bananas are distinct at an ontological level, and their absence must therefore be treated as distinct as well, which is what \textit{mathematical data} does. Describing the apples and bananas with their actuality and virtuality, we say that although $1=1$, an apple is \textit{not} a banana, $apple \neq banana$. However, in their absence, even though $0\cdot apples=0\cdot bananas$ because $0=0$, the metaphysical essence of being an apple is preserved \textit{virtually}, making it so these two zeroes have a different "metaphysical essence". We denote this using the subscript \textit{d}, attached to an equal sign (or a is not equal sign) on either side of the equation, to illustrate an actual equivalence but a virtual non-equivalence. For this example, since the absence of apples and bananas are metaphysically distinct, we illustrate the following actual equality and a virtual inequality: $$0\cdot apples=0\cdot bananas$$ $$0\cdot apples_v\neq_v0\cdot bananas$$  we use $_v\neq_v$, to indicate that both zeroes have the same actual value (of zero) but virtually represent different objects.\\On the surface, the invention of \emph{mathematical data} may seem trivial or even unnecessary. Why does it ``matter''? Why invent it at all? The truth is, for traditional number systems, mathematical data is indeed superfluous. However, in this newly invented number system, the \emph{absolute hyper-reals}, mathematical data is not only integral, but indispensable. The system relies heavily on it, and the ability to store qualitative information about numbers becomes essential for reinterpreting and re-imagining concepts like continuity. In this context, data is not just an addition; it forms a core aspect of this new number system itself.
+
+\newpage \section{Chapter 2 - Introduction to the absolute hyper-reals}
+
+Nonstandard analysis, originally developed by Abraham Robinson, extends the real number line to include infinitesimals (denoted by $\varepsilon$) and infinite quantities (denoted by $\omega$). Infinitesimals are nonzero quantities smaller in magnitude than every real number, while infinite values are quantities larger than every real number but are not ``infinity'' in the sense that they are not invariant under finite arithmetic operations. For example, an infinite quantity $\omega$ is distinct from $\omega + 1$, with $\omega + 1 > \omega$, unlike the formal symbol $\infty$, for which $\infty + 1$ and $\infty$ are not regarded as distinct magnitudes. In this sense, the hyper-reals are \emph{non-Archimedean}, as unlike the real numbers, they do not satisfy the Archimedean property, as there exist positive infinitesimals $\varepsilon$ such that no finite real multiple $n\varepsilon$ (for any $n \in \mathbb{N}$) exceeds a given real number, and dually there exist infinite elements $\omega$ that dominate all real numbers, allowing a precise distinction between finite, infinitesimal, and infinite magnitudes.
+$$\varepsilon<\mathbb{R^+}$$ $$\varepsilon>0$$$$\omega>\mathbb{R^+}$$ $$\omega\neq\infty$$This extension allows concepts such as limits, continuity, and differentiation and integration to be reformulated using infinitesimals rather than traditional $\varepsilon$--$\delta$ arguments, thereby more closely resembling the original formulations of calculus introduced by Leibniz (through differentials) and Newton (through fluxions)[6][7][8][9][10][11].\\Inspired by this number system, this paper introduces a new number system, referred to as the \emph{absolute hyper-real numbers}. This system is conceptually similar to the hyper-real numbers and shares many of the same foundational ideas: both were developed with the goal of reformulating calculus through a reexamination of concepts such as limits and continuity, achieved by the admission of infinitesimal and infinite quantities. Despite these similarities, there is a fundamental conceptual distinction between the hyper-reals and the number system introduced here. In a manner, it is a simple distinction, yet it this difference completely reformulates and re-interprets \textit{continuity}. You see, like most real-derived number systems, the hyper-reals are classically understood to be \textbf{absolutely continuous}: meaning that although they extend the real numbers to include infinitely small and infinitely large values, they do not contain a "smallest" nonzero element and no "largest" element. As a result of this, infinitesimals - which are described as being infinitely small, \textit{can} be subdivided indefinitely without collapsing to zero, all while still retaining nonzero magnitude. Although they would be meaninglessly small, higher powers of an infinitesimal, such as its square or cube, would still technically remain greater than zero. We illustrate this below by presenting a real number line alongside hyper-real infinitesimal monads (where a monad denotes the set of values infinitesimally close to a given value [13]), with each monad corresponding to higher powers of infinitesimals. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.896\linewidth]{Screenshot 2025-12-23 at 15.55.00.png}
+    \caption{Real line and infinitesimal monads of higher powers}
+    \label{fig:placeholder}
+\end{figure} This process of dividing and shrinking the magnitude of infinitesimals is, in principle, unending - one can produce infinitesimals of progressively smaller orders indefinitely because the hyper-real number line is absolutely continuous, and no obstruction exists to prevent the existence of ever-smaller infinitesimals. In essence, there is no theoretical limit to how small an infinitesimal can become within the hyper-real number system, and despite how close one gets to zero, zero is never reached. But what if there was? What if, contrary to standard number line convention, this infinite descent into smaller infinitesimals were to terminate after some possible hyper-real infinite iteration? What if there existed a smallest positive infinitesimal, a fundamental lower bound to how small a quantity could be, where any smaller would simply collapse to zero, and what would that entail?
+Conventional wisdom and classical analysis hold that such a minimal infinitesimal cannot exist, for its presence would contradict the inherent nature of the continuum as an infinitely divisible entity. In both the hyper-real system and other real-derived number systems, one should always be able to “zoom in” infinitely without ever arriving at a smallest scale or “atomic” monad. The continuum, by definition, resists such discretizations. \\ Which is precisely where our number system - the \textit{absolute hyper reals}, comes into play, as it is here where we propose a number system in which there \textbf{does} exist a smallest element (alongside a smallest monad), thereby interpreting the number line as not being an infinitely divisible entity. This assumption gives rise to the \textit{absolute hyper-real} number line, which departs from conventional number systems and offers an alternative approach to the treatment of infinitesimals and infinities, and, most importantly, to the notion of \emph{continuity} as a whole.\\ We represent the set of all absolute hyper-real numbers using a new set symbol $\mathbb{R}_\Omega$, distinct from the hyper-real ${}^\ast\mathbb{R}$. The inspiration behind the usage of a capital omega subscript ($\Omega$) instead of using an asterisk like the hyper-reals comes from the notion of absolute infinity in set theory [14]. \\ The hyper-real number line is founded on the same ideas and principles as the \textit{hyper-real} number line - both are described as being extensions of the reals designed to include infinitesimal and infinite values, thereby superseding the real numbers. However, the key point at which this system deviates from the hyper-reals, and from conventional number lines more generally --- is that it is a \textbf{bounded} number system, in which there exist minimal and maximal nonzero and non-infinite magnitudes. This is quite striking, because although the real number system is unbounded and contains no "smallest and largest" elements, the absolute hyper-real number system, which serves as an extension of the reals suddenly \textit{does} include these absurd elements.\\At first glance, this may seem absurd: how can a supposedly unbounded extension of the reals suddenly possess bounds? This is not merely paradoxical in appearance---it is paradoxical in essence, and intentionally so. The contradiction is the foundation of this system. These bounds are never encountered \textit{within} the real numbers themselves; they arise only when one ventures \textit{outside} $\mathbb{R}$ and into the absolute hyper-reals. Since $\mathbb{R}$ is conceptually embedded within the absolute hyper-reals, the number line behaves classically and continuously as long as we remain within the reals. Beyond them, however, the continuum begins to break down: the number line deviates from standard behavior by functioning \textit{discretely} at very small scales and failing to extend beyond very large scales, because \textbf{actuality collapses beyond these bounds}. This strange phenomenon is caused by ``\textit{absolute}'' elements, so named because they represent the extreme limits of magnitude itself. The first such number is the \emph{absolute infinitesimal}, denoted by $\varepsilon_\Omega$, and the second---its reciprocal---is the \emph{absolute hyperfinite}, denoted by $\omega_\Omega$. In this work, the term \emph{hyperfinite} is preferred over \emph{infinite}, since infinity itself exists as a separate entity from the hyperfinites in this theory.\\We define the absolute infinitesimal in a manner similar to a hyper-real infinitesimal: it is a number whose magnitude is smaller than all real numbers but strictly greater than zero. However, this model further extends the definition by treating the absolute infinitesimal as being \textit{absolutely} infinitesimal, meaning it is infinitesimal to every standard magnitude, making it a nonzero, strict lower bound of magnitude---meaning that no number exists that is smaller than it yet greater than zero. Below, we present the basic definition of absolute infinitesimals, also referred to as the ``simple'' lower-bound definition.
+  $$\varepsilon_\Omega\in\mathbb{R}_\Omega$$ $$\varepsilon_\Omega\neq0$$ $$\varepsilon_\Omega<\mathbb{R}$$  $$n,k\in\mathbb{R}_\Omega$$ $$n<|1|$$ $$n\cdot\varepsilon_\Omega=0$$ $$k\ge|1|$$ $$|k\cdot\varepsilon_\Omega|>0$$ $$\therefore 0 \le |x| < \varepsilon_\Omega \implies x = 0
+$$ Consequently, the number line in which absolute infinitesimals appear no longer functions as continuous. Instead, since the absolute infinitesimal is the smallest possible non-zero value, it operates discretely at this level: values can increase only by one absolute infinitesimal unit, the smallest possible nonzero magnitude increase. As a result, only integer multiples of the absolute infinitesimal exist, with no values in between. The following image visualizes the absolute hyper-real line at the absolute infinitesimal level, illustrating the monad below the reals—the absolute infinitesimal monad. Since absolute infinitesimals are the absolute smallest, the number line must be stretched to observe them, making them appear as discrete dots. These absolute infinitesimal points collapse to form a singular continuous line.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Screenshot 2025-12-23 at 23.37.59.png}
+    \caption{Discrete absolute infinitesimal monad within the Reals}
+    \label{fig:placeholder}
+\end{figure}
+We now move from discussing the absolute infinitesimal to discuss the absolute hyperfinite. The absolute hyperfinite is defined as the reciprocal identity of the absolute infinitesimal $\frac{1}{\varepsilon_\Omega}=\omega_\Omega$ , and it is defined in a manner similar to its hyper-real analogue, being larger than all real numbers, but is not "infinity". However, this number system bears a far more offensive definition of having the absolute hyperfinite be defined as being the hard upper limit for “finite” magnitude, because again, it is "\textit{absolutely}" hyperfinite, meaning no larger \textit{finite} number than it exists, and instead, this theory interprets that infinity is reached. Below we present the basic definition of an absolute hyperfinite, also known as the "simple" upper bound definition.\\$$\omega_\Omega\in\mathbb{R}_\Omega$$ $$\omega_\Omega\neq\infty$$ $$\omega_\Omega>\mathbb{R}$$  $$n,k\in\mathbb{R}_\Omega$$ $$n<|1|$$ $$n\cdot\omega_\Omega\in\mathbb{R}_\Omega$$ $$k\ge|1|$$ $$k\cdot\omega_\Omega=\infty$$ $$\infty\notin\mathbb{R}_\Omega$$ 
+This makes the absolute hyperfinite the largest finite quantity within this number system - serving as it's upper bound. In the absolute hyper-reals, any increase beyond this magnitude essentially renders the concept of actuality asunder, and  \textit{infinity} is therefore reached. Just as the absolute infinitesimal is in a way the "barrier" between magnitude (actuality) and zero, the absolute hyperfinite is the "barrier" between magnitude and \textit{infinity}. Naturally, this also means that infinity itself is substantially reinterpreted in this system and differs markedly from conventional notions. Although this interpretation will be examined in detail in a later chapter, this brief discussion is necessary, as the absolute hyperfinite cannot be meaningfully understood without reference to the system’s conception of infinity. \\ The first concept to understand about infinity in this theory is that it is an ``entity'' separate from the set of values comprising the absolute hyper-reals. Infinity is defined as \textit{not} being an element of the absolute hyper-real set, $\mathbb{R}_\Omega$, but instead as something outside of it. This is because conceptually, the absolute hyper-reals consist only of \textbf{finite} values: values that lie along the absolute hyper-real number line, extending from $-\omega_\Omega$ to $\omega_\Omega$, where $|\omega_\Omega|$ represents the largest possible finite magnitude. Numbers \textit{larger} than $|\omega_\Omega|$ are therefore considered infinite, and these resulting numbers are therefore "part" of infinity. Therefore, infinity comprises of all the "elements" that $\mathbb{R}_\Omega$ does \textbf{not} contain. In this number system, infinity is therefore redefined by a change in what it means to be \textit{finite}. Here, ``finite'' is taken to mean \textbf{belonging to the absolute hyper-real set} $\mathbb{R}_\Omega$. Any quantity that does not belong to this set is, by definition, classified as infinite. One consequence of this definition is that expressions which would traditionally be regarded as finite---such as $2\omega_\Omega$---are instead labeled infinite, even though there is nothing intrinsically ``infinite'' about them in the usual sense. This raises an obvious question: how can a quantity be called infinite if it is not truly infinite? The answer lies in a conceptual distinction. In this theory, actuality is taken to collapse beyond the absolute hyperfinite - which means that values larger than the absolute hyperfinite, do not really exist as \textit{standalone} actual values, instead, they all are described as having the same actual value of "infinity" and are described as different \textbf{specific infinite data} of infinity through virtuality. This makes infinity as a whole not traditionally point, a direction, or a continuation of the number line, but it is imagined as something \textit{entirely} different. Infinity is imagined as a \textit{space} in which actuality and value itself breaks down. Unlike the real numbers, which are arranged along a line with a meaningful notion of order and magnitude, infinity represents a domain where magnitude, size, order, and comparison no longer apply. Within infinity there is no ``larger'' or ``smaller''; it is a homogenized domain encompassing everything beyond the hyperfinite. Accordingly, infinity is not defined as the ``next value'' after the hyperfinite, but as a separate kind of mathematical object altogether. It is better understood through what we call \textit{virtuality}, which we refer to as \textbf{specific infinite data}. Returning to the example of $2\omega_\Omega$, this quantity is interpreted as a specific infinite data of infinity: it is not an actual value and is not represented as a point on a line, but rather as belonging to infinity as a whole. \\To help visualize these ideas, we include the following figure, which illustrates both the entirety of the absolute hyper-reals and infinity. Just as visualizing the absolute infinitesimal requires zooming into its monad on the real number line, visualizing the absolute hyperfinite requires an extreme zoom-out. From this perspective, the familiar real numbers $\mathbb{R}$ collapse into a monadic cluster, while the number line extends outward until it reaches the hyperfinite, which serves as the boundary where the finite ends and the infinite begins.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Untitled drawing.pdf}
+    \caption{The absolute hyper-reals at the absolute hyperfinite scale}
+    \label{fig:placeholder}
+\end{figure}
+Beyond that, numbers are no longer defined as being on a continuum - and instead are defined as being infinity. In the case of $2\omega_\Omega$, this data doesn't exist as a point somewhere to the right of the number line, but is a data of $\infty$ as a whole. Now, this is only the introduction of infinity within this number system (or rather, completed number system) - to fully delve and understand infinity requires proper establishment of how virtuality functions, and most importantly, keeps this number system in check.
+\newpage
+
+\section{Chapter 3 - Basic Algebraic Properties of Absolute Hyper-Reals}
+
+Having established the foundational concepts of the absolute hyperfinite number system, this chapter explains the basic algebraic properties of $\mathbb{R}_\Omega$, including commutativity, associativity, identities, inverses, and closure, alongside arithmetic operations involving absolute infinitesimals and absolute hyperfinites.\\Before beginning, it should be noted that this chapter discusses algebraic properties purely through \textbf{actuality}, and not \textit{virtuality} - virtuality will be covered in a later chapter. \\For the most part, this number system is built similarly to the reals, asserting that many of the same rules and axioms governing $\mathbb{R}$ transfer to $\mathbb{R}_\Omega$. What this means is that absolute hyper-reals are often treated as if they were real, while accounting for deviations caused by the absolute elements. The primary algebraic irregularities occur when values exceed minimum ($\varepsilon_\Omega$) and maximum ($\omega_\Omega$) thresholds.
+
+\subsection{Structural Relationship to the Reals}
+
+The absolute hyper-reals are conceptually an extension of the real numbers, meaning $\mathbb{R} \subseteq \mathbb{R}_\Omega$. However, this is a somewhat paradoxical assertion, as previously mentioned, the traditional reals extend infinitely and are absolutely continuous, while the absolute hyper-reals only extend to $\pm\omega_\Omega$ and can only be subdivided until $\varepsilon_\Omega$ is reached, effectively "breaking" the traditional number line. Our argument is that despite the fact this is the case, the real numbers nest within the absolute hyper-reals as an ``infinitesimal subsection'' where the number line behaves ``normally''---infinitely extending and infinitely sub divisible.
+
+\subsection{Why $\mathbb{R}_\Omega$ Is Not a Field}
+
+Although many properties of $\mathbb{R}$ are present in $\mathbb{R}_\Omega$, the system cannot be conventionally described as a field, ring, or group because it is not closed under addition involving $\omega_\Omega$. Since $\omega_\Omega$ represents a boundary between the continuum and infinity ($\infty$), and infinity is not part of the absolute hyper-reals, operations that exceed $\omega_\Omega$ produce results outside $\mathbb{R}_\Omega$. The system is best described as ``field-like''---it is closed under real arithmetic but not under its own arithmetic.
+
+\subsection{Standard Algebraic Properties}
+
+Despite not being a field, $\mathbb{R}_\Omega$ possesses the following standard properties:
+
+\textbf{Associativity:} For all $a, b, c \in \mathbb{R}_\Omega$:
+\begin{align*}
+(a + b) + c &= a + (b + c) \\
+(a \times b) \times c &= a \times (b \times c)
+\end{align*}
+
+\textbf{Commutativity:} For all $a, b \in \mathbb{R}_\Omega$:
+\begin{align*}
+a + b &= b + a \\
+a \times b &= b \times a
+\end{align*}
+
+\textbf{Identity Elements:}
+\begin{itemize}
+\item $0$ is the additive identity: $a + 0 = a$
+\item $1$ is the multiplicative identity: $a \times 1 = a$
+\end{itemize}
+
+\textbf{Inverses:}
+\begin{itemize}
+\item Every element has an additive inverse: $a + (-a) = 0$
+\item Every non-zero element has a multiplicative inverse: $a \times \frac{1}{a} = 1$
+\end{itemize}
+
+\subsection{Reciprocal Identities}
+
+A crucial property of this system is that $\varepsilon_\Omega$ and $\omega_\Omega$ are reciprocal identities:
+\begin{align*}
+\frac{1}{\varepsilon_\Omega} &= \omega_\Omega \\
+\frac{1}{\omega_\Omega} &= \varepsilon_\Omega \\
+\varepsilon_\Omega \times \omega_\Omega &= 1
+\end{align*}
+
+An important consequence of absolute infinitesimal elements is that not every reciprocal possesses a unique magnitude. Certain unequal numbers can have equal reciprocals---a property that will be explored further in later chapters.
+
+\subsection{Closure and Boundary Behavior}
+
+\subsubsection{Absolute Infinitesimals}
+
+$\mathbb{R}_\Omega$ is closed under addition of absolute infinitesimal elements with other infinitesimals and real numbers. However, absolute infinitesimals can only exist as integer multiples of $\varepsilon_\Omega$. When multiplied by a non-integer real number, the \textbf{actual} result is either the floor (if positive) or ceiling (if negative) of the expression:
+
+For $a \in \mathbb{R}$:
+\begin{align*}
+1 < a: \quad a \times \varepsilon_\Omega &= \lfloor a \rfloor \varepsilon_\Omega \\
+a < -1: \quad a \times \varepsilon_\Omega &= \lceil a \rceil \varepsilon_\Omega
+\end{align*}
+
+Additionally, the lower bound property states that for any $a$ where $|a| < 1$:
+$$a \times \varepsilon_\Omega = 0$$
+
+This vanishing property means that absolute infinitesimals collapse to zero when their magnitude is sufficiently reduced. Importantly, multiplication of $\varepsilon_\Omega$ by any element in $\mathbb{R}_\Omega$ (including $\omega_\Omega$) remains within $\mathbb{R}_\Omega$:
+$$\forall a \in \mathbb{R}_\Omega: \quad a \times \varepsilon_\Omega \in \mathbb{R}_\Omega$$
+
+\subsubsection{Absolute Hyperfinites}
+
+The absolute hyperfinite $\omega_\Omega$ represents the largest possible finite magnitude. Any operation that increases its magnitude beyond $\omega_\Omega$ produces infinity, which is not an element of $\mathbb{R}_\Omega$.
+
+For $a \in \mathbb{R}_\Omega$:
+\begin{align*}
+|a| > 1: \quad \omega_\Omega \times a &\notin \mathbb{R}_\Omega \\
+\omega_\Omega \times a &= \infty
+\end{align*}\\Even simple expressions like $\omega_\Omega + 1 = \infty$ exceed the continuum. Conversely, operations that decrease or preserve the magnitude of $\omega_\Omega$ remain within $\mathbb{R}_\Omega$:
+$$|a| \leq 1: \quad \omega_\Omega \times a \in \mathbb{R}_\Omega$$
+
+\subsection{The Distributivity Complication}
+
+Unlike the other algebraic properties, distributivity in $\mathbb{R}_\Omega$ presents complications at the infinitesimal scale. While multiplication generally distributes over addition:
+$$a, b, c \in \mathbb{R}_\Omega: \quad a(b + c) = ab + ac$$\\there exists a caveat involving absolute infinitesimals. Consider the expression:
+$$\varepsilon_\Omega \times (1 - 0.5) = \, ?$$
+
+Two interpretations arise:
+\begin{enumerate}
+\item Evaluate inside first: $(1 - 0.5) = 0.5$, then $0.5 \times \varepsilon_\Omega = 0$ (by the lower bound property)
+\item Distribute first: $\varepsilon_\Omega \times 1 - \varepsilon_\Omega \times 0.5 = \varepsilon_\Omega - 0.5\varepsilon_\Omega$
+\end{enumerate}
+The second interpretation creates a contradiction: if $0.5\varepsilon_\Omega$ is zero-equivalent (as it should be by the lower bound property), then $\varepsilon_\Omega - 0$ should equal $\varepsilon_\Omega$, not zero. Yet treating it as genuinely zero-equivalent would mean it acts as an additive identity, suggesting $\varepsilon_\Omega - 0.5\varepsilon_\Omega = \varepsilon_\Omega$.\\This dilemma puts into question the concepts of an absolute infinitesimal as a whole into jeopardy, as now we see despite the fact that absolute infinitesimals should vanish when multiplied by values lesser than $|1|$, since we can re-define these expressions as 1 \textit{minus} a certain "part", we can essentially redefine all $n\cdot\varepsilon_\Omega$ into $\varepsilon_\Omega-c\varepsilon_\Omega$, where \textit{c} is defined as being $n=1-c$ and \textit{n} is just some value lesser than $|1|$. This dilemma reveals that the simple lower bound property requires deeper justification. The resolution of this distributivity problem---and the true explanation for why absolute infinitesimals vanish when reduced---requires cementing the lower bound property --- and showing for a fact that magnitudes lesser than the absolute infinitesimal vanish, instead of existing in this contradictory superposition of being zero-equivalent or $\varepsilon_\Omega$-equivalent. Which is where we properly introduce the \textit{bound property of the absolute hyper-reals}.
+
+\section{Chapter 4 - The bound property}
+
+The bound property is one of the most fundamental features of this theory, as it dictates the fundamental algebraic ideas of this number system (upper and lower bounds) and also motivates the existence and inclusion of mathematical data into this number system.\\However, one might reasonably ask: hasn't the bound property already been defined? Specifically, that anything smaller than an absolute infinitesimal equals zero, and anything larger than the absolute hyperfinite becomes infinite?\\The answer is that our current definition---stating that numbers vanish or become infinite when certain bounds are crossed, is insufficient. While we have established these ideas conceptually, as previously shown, they do not hold up mathematically, as evidenced by the distributivity problem discussed earlier. This raises a crucial question: why do absolute infinitesimals reduce to zero when their magnitude falls below $\varepsilon_\Omega$, rather than behaving in some other way?\\Previously, the response to this was purely conceptual. We accepted by convention that no value smaller than $\varepsilon_\Omega$ exists, meaning the only smaller number by that metric would be zero. When absolute infinitesimals were reduced below this threshold, they were described as vanishing into zero. This gives the absolute infinitesimal its moniker of being ``absolute''---it describes the property that further reduction is not possible, which is why this infinitesimal is \textit{absolutely} infinitesimal. However, due to the dilemma regarding the distributive property of our previous chapter, this definition, the "simple lower bound", is not sufficient.
+\begin{gather*}
+n, k \in \mathbb{R}_\Omega \\
+n < |1| \\
+n \cdot \varepsilon_\Omega = 0 \\
+k \geq |1| \\
+|k \cdot \varepsilon_\Omega| > 0 \\
+\text{However, this leads to} \\
+\varepsilon_\Omega \times (1 - 0.5) = \, ?
+\end{gather*}
+There needs to be something \textit{more}---something that fully explains \textit{why} absolute infinitesimals vanish. This missing piece comes from the upper bound property, or more precisely, a certain aspect of it. Conceptually, the upper bound property states that anything larger than $\omega_\Omega$ is infinity---but that is not the complete picture. We have defined the set of absolute hyper-real numbers as representing all finite values, as seen in Figure 3. Essentially, everything on this number line is an element of $\mathbb{R}_\Omega$ and is ``finite.'' The absolute hyperfinite is defined as the last and largest finite number, but it also serves a deeper role: it marks the boundary of the number line continuum. The continuum does not extend beyond the absolute hyperfinite, which is why numbers greater than it do not exist within the continuum. Instead, we encounter infinity, where larger expressions become ``part'' of this space. This matters because anything beyond the absolute hyperfinite is not an element of $\mathbb{R}_\Omega$---conceptually, it is no longer part of the continuum, as it is not finite. Recall that in the previous chapter, we claimed every non-zero magnitude has a reciprocal---just like in the real number system.$$\forall a, a \in \mathbb{R}_\Omega$$ $$\frac{1}{a} \in \mathbb{R}_\Omega$$This rule is incredibly important as it holds true for all the elements of the absolute hyper-reals, from it's smallest ($\varepsilon_\Omega$), to it's largest element ($\omega_\Omega$). There is only one element which is described as \textit{not} having a reciprocal within the absolute hyper-reals, which allows us to establish a connection between the upper bound property and this definition, and that number is \textit{zero}.\\Zero is defined as not having a defined reciprocal element in the number system $\mathbb{R}_\Omega$. By convention, $\frac{1}{0}$ is undefined. However, it is also true to say that since it is undefined, it is not an element of the absolute hyper-real numbers.
+$$\frac{1}{0} \notin \mathbb{R}_\Omega$$
+\\We can use this definition to connect why values below $|\varepsilon_\Omega|$ are zero-equivalent, and that is because both division by zero and numbers larger than the absolute hyperfinite are not defined as being elements within $\mathbb{R}_\Omega$.\\If we were to take the expression $0.5\varepsilon_\Omega$ and take its reciprocal, we would find that the reciprocal of this expression is $2\omega_\Omega$---which is larger than the absolute hyperfinite and therefore is not an element of $\mathbb{R}_\Omega$.\\Since every finite number has a reciprocal element within $\mathbb{R}_\Omega$ except for $0$, and anything larger than $\omega_\Omega$ is not in $\mathbb{R}_\Omega$, we can therefore conclude that numbers of magnitude less than $|\varepsilon_\Omega|$ are zero-equivalent, because both $0$ and these expressions do not have reciprocals in $\mathbb{R}_\Omega$; therefore, they are equal in value.\\This leads to us \textit{fully} defining the upper and lower bound properties through this reasoning:
+
+For $n, k \in \mathbb{R}_\Omega$ where:
+\begin{align*}
+|k| &> 1 \\
+|n| &< 1
+\end{align*}
+
+Due to the simple upper bound property, we define numbers larger than the absolute hyperfinite as not being on the number line and therefore not being elements of the absolute hyper-reals:
+
+$$k \times \omega_\Omega \notin \mathbb{R}_\Omega$$
+
+Because the reciprocal of the number $n$ is larger than the absolute value of $1$:
+
+$$\frac{1}{n} > |1|$$
+
+The reciprocal of $n \times \varepsilon_\Omega$ can be redefined as a hyperfinite expression:
+
+$$\frac{1}{n \times \varepsilon_\Omega} = \frac{1}{n}\omega_\Omega$$
+
+This hyperfinite expression transcends the upper bound of $\mathbb{R}_\Omega$, and therefore is not an element of $\mathbb{R}_\Omega$:
+
+$$\frac{1}{n}\omega_\Omega \notin \mathbb{R}_\Omega$$
+
+And because of the fact that only zero does not have a defined reciprocal within $\mathbb{R}_\Omega$: $$\frac{1}{0}\notin\mathbb{R}_\Omega$$
+
+And because $\frac{1}{n \times \varepsilon_\Omega}$ is not an element of $\mathbb{R}_\Omega$ as it transcends the upper bound:
+
+$$\frac{1}{n \times \varepsilon_\Omega} \notin \mathbb{R}_\Omega$$
+
+We can therefore properly establish the lower bound property:
+
+$$n \times \varepsilon_\Omega = 0$$
+
+Because both $0$ and $n \times \varepsilon_\Omega$ do not have reciprocals defined in $\mathbb{R}_\Omega$, therefore $n \times \varepsilon_\Omega$ must be a zero-equivalent expression.\\This is the completed bound property, which not only solidifies the reason as to \textit{why} absolute infinitesimals vanish when reduced, but it also is a powerful \textit{precursor} to defining division by zero, because by linking zero-equivalent expressions (which are in fact \textbf{sub-infinitesimal data}) to infinite-equivalent expressions (which are in fact \textbf{specific infinite data}), we can establish the following relationship:
+
+$$\frac{1}{\infty} = 0$$
+
+But the \textit{implications} of this definition come from the fact that the sub-infinitesimal expressions of $0$, alongside the specific infinite expressions of infinity, are not standalone values---a fact which will be discussed in the \textit{next chapter}.
+
+\subsection{Summary} In conclusion:\\
+
+\textbf{The simple lower bound property:}
+$$a \times \varepsilon_\Omega = 0, \quad |a| < 1$$
+
+\textbf{The proper lower bound property:}
+\begin{gather*}
+a \times \varepsilon_\Omega = 0, \quad |a| < 1 \\
+\text{Because} \\
+\frac{1}{a \times \varepsilon_\Omega} \notin \mathbb{R}_\Omega \\
+\text{and} \\
+\frac{1}{0} \notin \mathbb{R}_\Omega
+\end{gather*}
+
+\textbf{The simple upper bound property:}
+$$a \times \omega_\Omega = \infty, \quad |a| > 1$$
+
+\textbf{The proper upper bound property:}
+\begin{gather*}
+a \times \omega_\Omega \notin \mathbb{R}_\Omega \\
+\text{implies} \\
+\frac{1}{a \times \omega_\Omega} = 0
+\end{gather*}
+
+\section{Chapter 5 - Introduction to Data: Reimagining Zero and Infinity}
+
+\subsection{Part 1 - Introduction of data}
+
+Recall from Chapter 1 that numbers in $\mathbb{R}_\Omega$ comprise two aspects: actuality (magnitude) and virtuality (data). While actuality describes "how much," data describes information beyond magnitude---the metaphysical "essence" of a number. In Chapters 2-4, we worked primarily with actuality, establishing bounds and reciprocal relationships. Now, we formalize how data operates mathematically.\\In this chapter, we examine two specific forms: \textbf{sub-infinitesimal data}, which preserves information when expressions collapse below $\varepsilon_\Omega$ to zero, and \textbf{specific infinite data}, which distinguishes expressions that exceed $\omega_\Omega$. These are not merely philosophical abstractions---they resolve the distributivity problem from Chapter 3 and enable division by zero. We begin with sub-infinitesimal data, as it involves the familiar concept of zero, before addressing specific infinite data and its radical re-conceptualization of infinity.
+
+\subsection{Part 2 - Virtual notation and sub-infinitesimal and specific infinite basics}
+To understand \textit{virtuality}, we introduce a conceptual tool: \textbf{virtual notation}. This notation is a conceptual tool which represents data related concepts alongside actuality, making sub-infinitesimal and specific infinite data visible in equations. Traditional mathematical notation focuses solely on actuality—on magnitude and value. In this theory, we call this \textbf{actual notation}. It is ordinary mathematical notation: the familiar equality sign indicating that both sides have the same magnitude. Examples of actual notation:
+$$1+1=2$$ 
+$$\sqrt{2}=1.4142...$$ 
+$$\int_2^3x^2dx=9-\frac{8}{3}$$
+Virtual notation serves as an essential tool for making virtuality visible in equations. While data cannot be directly observed through actual notation—it is virtual information, not magnitude—it nevertheless influences mathematical operations and relationships (in certain contexts). In our first chapter, we discussed how different absences can have a metaphysical distinction - well, that is a good conceptual beginning to understanding virtual notation. Although by actuality zero \textit{is} zero, because of the metadata that we are talking about different objects is present, we make a \textit{virtual} distinction between the two zeroes. $$0=0$$ $$0 \text{ apples }{}_v{\neq}{}_v\text{ }0\text{ bananas}$$  We use ${}_v{\neq}{}_v$ - which indicates both the left \textit{and} the right side showcase virtual meta-data information. The subscript $_v$ present on either side of the equality (or in this case, inequality sign) "reveals" the virtual data on whatever side of the equation the subscript \textit{v} is present. For example, $$0\neq_v0\text{ bananas}$$ $$0\text{ apples }{}_v{\neq}\text{ } 0$$ \\Above, we see that whichever side contains the subscript v will \textit{reveal} whatever metadata is present, while the side not containing the v subscript will only display the actual value present. \\Although virtual notation is a conceptual tool, it is \textit{fundamental} in describing and showcasing sub-infinitesim
+
+
+
+\end{document}
