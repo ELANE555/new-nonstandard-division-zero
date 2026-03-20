@@ -15,7 +15,9 @@ To these extents, I ask you, the reader, to read this work and to pace yourself.
 As a final disclaimer, I do want to note that Claude AI was used to help clean up grammar and make this paper more readable, essentially functioning as an editor. However, it should be noted that despite this, all the math and ideas in this paper are mine: the AI didn't generate any content; it just made my writing less messy. 
 
 **DOI**
+
 This work is also available on Zenodo:
+
 https://zenodo.org/records/19131547
 
 Citation for the source: 
